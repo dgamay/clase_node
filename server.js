@@ -6,6 +6,9 @@ const express = require('express') ;//llamado ala servicio de express
 
 const app = express(); // Se agrega el servidor  a esta constante lo que facilita su llamado
 
+const routes =require("./api.routes") //llado de api.routes
+app.use('/api/v1',routes);
+
 app.get('/',(req, res)=>{ //ruta sin parametro que se mostrara en el navegador
     res.send('Hola mundo!!, desde Node con express');
 });

@@ -13,10 +13,21 @@ const router = express.Router();
 const userController = require('../controllers/user.controller');
 /* const {index} = require('../controllers/user.controller')
  */
-/* Creare las rutas */
 
+/* ################################################################################ */
+/* Creare las rutas */
 router.get('/',userController.index);
 /* router.get('/', index) */
+//rta del metodo create
+router.post('/:id',userController.create);
 
+router.put('/:id',userController.update);
+
+router.delete('/:id',userController.destroy);
+
+router.get('/:id',userController.show);
+
+
+/* npm i sequelize pg --save   esta linea es para descargar */
 /* Esportar el router para que poueda ser ubsado en en otras partes de la api */
 module.exports = router;

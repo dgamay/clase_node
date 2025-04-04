@@ -18,7 +18,7 @@ User.init({
         allowNull: false,
     },
 
-    lasttname:{
+    lastname:{
         type:DataTypes.STRING(50),
         allowNull: false,
     },

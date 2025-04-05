@@ -12,6 +12,12 @@
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^5.1.0",
+<<<<<<< HEAD
     "nodemon": "^3.1.9"
+=======
+    "nodemon": "^3.1.9",
+    "pg": "^8.14.1",
+    "sequelize": "^6.37.7"
+>>>>>>> 9f48c7b94f7b5dc3dab99913c3df33b41d30be11
   }
 }

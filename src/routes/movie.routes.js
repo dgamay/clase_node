@@ -9,12 +9,10 @@ const express = require('express');
 const router = express.Router();
 
 
-/* Rutas para el controlador de usuarios*/
+/*  */
+const movieController = require('../controllers/movie.controller');
 
-const userRouter= require("./src/routes/user.routes");
-router.use("/users", userRouter);
 
-const movieRouter =require('./src/routes/movie.routes');// controlador
-router.use("/movies/movieRouter", movieRouter); // esta linea define la ruta y el controlador
+router.get('/',movieController.index);
 
-module.exports=router;
+module.exports = router;

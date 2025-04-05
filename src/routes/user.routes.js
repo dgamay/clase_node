@@ -28,7 +28,7 @@ router.get('/',userController.index);
 // router.get('/:id',userController.show);
 
 
-<<<<<<< HEAD
+
 router.post('/:id',userController.create);
 
 router.put('/:id',userController.update);
@@ -37,8 +37,7 @@ router.delete('/:id',userController.destroy);
 
 router.get('/:id',userController.show);
 
-=======
 /* npm i sequelize pg --save   esta linea es para descargar */
->>>>>>> 9f48c7b94f7b5dc3dab99913c3df33b41d30be11
+//9f48c7b94f7b5dc3dab99913c3df33b41d30be11
 /* Esportar el router para que poueda ser ubsado en en otras partes de la api */
 module.exports = router;

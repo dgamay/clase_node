@@ -1,6 +1,4 @@
 const {Model,DataTypes}= require("sequelize");
-
-
 const sequelize = require('./dbconection');
 
 class User extends Model{}

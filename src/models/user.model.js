@@ -50,3 +50,12 @@ User.init({
 );
 /* Exportar el modelo */
 module.exports= User;
+
+/* {
+    "firstname":"robinson",
+    "lastname": "amaya",
+    "email":"rob@rob.com",
+    "password":"1236567",
+    "isActive": true
+
+} */

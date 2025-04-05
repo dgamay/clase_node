@@ -29,7 +29,7 @@ router.get('/',userController.index);
 
 
 
-router.post('/:id',userController.create);
+router.post('/',userController.create);
 
 router.put('/:id',userController.update);
 

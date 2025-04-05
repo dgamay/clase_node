@@ -18,5 +18,13 @@ const userController = require('../controllers/user.controller');
 router.get('/',userController.index);
 /* router.get('/', index) */
 
+router.post('/:id',userController.create);
+
+router.put('/:id',userController.update);
+
+router.delete('/:id',userController.destroy);
+
+router.get('/:id',userController.show);
+
 /* Esportar el router para que poueda ser ubsado en en otras partes de la api */
 module.exports = router;

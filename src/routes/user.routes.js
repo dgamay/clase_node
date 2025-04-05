@@ -19,13 +19,12 @@ const userController = require('../controllers/user.controller');
 router.get('/',userController.index);
 /* router.get('/', index) */
 //rta del metodo create
-// router.post('/:id',userController.create);
+router.post('/:id',userController.create);
+router.put('/:id',userController.update);
 
-// router.put('/:id',userController.update);
+router.delete('/:id',userController.destroy);
 
-// router.delete('/:id',userController.destroy);
-
-// router.get('/:id',userController.show);
+router.get('/:id',userController.show);
 
 
 /* npm i sequelize pg --save   esta linea es para descargar */

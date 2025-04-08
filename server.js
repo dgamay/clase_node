@@ -6,6 +6,10 @@ const express = require('express') ;//llamado al servicio de express
 
 const app = express(); // Se agrega el servidor  a esta constante lo que facilita su llamado
 
+const cors = require("cors")
+
+app.use (cors())
+
 app.use(express.json());
 
 const routes =require("./api.routes") //llado de api.routes
